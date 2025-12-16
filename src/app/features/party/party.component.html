@@ -1,0 +1,15 @@
+<div class="h-dvh w-full relative bg-neutral-950 text-white">
+  <div class="absolute inset-0" #host></div>
+
+  <div class="absolute left-3 top-3 flex items-center gap-2 text-xs bg-black/40 rounded-xl px-3 py-2">
+    @if (loading()) {
+      <span>Verbinde…</span>
+    } @else {
+      <span>Players: {{ count() }}</span>
+    }
+
+    <button class="ml-2 underline" (click)="dance()">dance</button>
+    <button class="underline" (click)="cheers()">cheers</button>
+    <button class="underline" (click)="hat()">hat</button>
+  </div>
+</div>
