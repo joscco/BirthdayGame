@@ -18,7 +18,7 @@ jobs:
           npm ci
           npm run build -- --base-href /BirthdayGame/
 
-      - name: Deploy 🚀
+      - name: Deploy Page 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist/browser # The folder the action should deploy.
